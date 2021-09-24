@@ -33,23 +33,24 @@ public class UserMgtSteps {
 
     @When("I click Access DB button")
     public void i_open_access_DB_page() {
-        impl.getPage().accessDbBtn.click();
+        impl.openLinkInNewWindowAndSwitch("Access DB");;
     }
 
     @Then("Title of the page should be User DB")
     public void i_should_see_user_db_title() {
-        impl.openLinkInNewWindowAndSwitch("Access DB");
+        //impl.openLinkInNewWindowAndSwitch("Access DB");
         Assert.assertEquals("User DB", WebDriverUtils.getDriver().getTitle());
     }
 
     @When("I click LOGIN button")
     public void i_open_login_page() {
-        impl.getPage().loginBtn.click();
+        //impl.getPage().loginBtn.click();
+        impl.openLinkInNewWindowAndSwitch("LOGIN");
     }
 
     @Then("Title of the page should be Login Page")
     public void i_should_see_login_page_title() {
-        impl.openLinkInNewWindowAndSwitch("LOGIN");
+        //impl.openLinkInNewWindowAndSwitch("LOGIN");
         Assert.assertEquals("Login Page", WebDriverUtils.getDriver().getTitle());
     }
 

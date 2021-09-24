@@ -1,6 +1,5 @@
 package impl;
 
-import org.junit.Assert;
 import pages.UserMgtPage;
 import utils.WebDriverUtils;
 

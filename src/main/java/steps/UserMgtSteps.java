@@ -38,19 +38,16 @@ public class UserMgtSteps {
 
     @Then("Title of the page should be User DB")
     public void i_should_see_user_db_title() {
-        //impl.openLinkInNewWindowAndSwitch("Access DB");
         Assert.assertEquals("User DB", WebDriverUtils.getDriver().getTitle());
     }
 
     @When("I click LOGIN button")
     public void i_open_login_page() {
-        //impl.getPage().loginBtn.click();
         impl.openLinkInNewWindowAndSwitch("LOGIN");
     }
 
     @Then("Title of the page should be Login Page")
     public void i_should_see_login_page_title() {
-        //impl.openLinkInNewWindowAndSwitch("LOGIN");
         Assert.assertEquals("Login Page", WebDriverUtils.getDriver().getTitle());
     }
 
